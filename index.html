@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+        <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+        <script
+        type="text/JavaScript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+      <script
+        type="text/JavaScript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+      ></script>
+      <link rel="stylesheet" href="./css/w3.css" />
+      
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+
+      /* my css */
+      .my-img-size-1 {
+        max-width: 300px;
+      }
+      .my-img-size-2 {
+        max-width: 300px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card w3-text-blue-grey"
+        style="letter-spacing: 4px"
+      >
+      <div>
+        <a class="w3-padding-large w3-hide-small w3-right"
+          ><i class="fa fa-search w3-text-grey"></i
+        ></a>
+      </div>
+
+        <a href="#home" class="w3-bar-item w3-button w3-large">FLEXTIONARY</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small w3-large">
+          <a href="#home" class="w3-bar-item w3-button">Home</a>
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+          <a href="#tools" class="w3-bar-item w3-button">Tools</a>
+          <a href="#tutorials" class="w3-bar-item w3-button">Tutorials</a>
+          <a href="#programs" class="w3-bar-item w3-button">Programs</a>
+        </div>
+          
+
+        <!-- begin added for mobile version -->
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- end added for mobile version -->
+      </div>
+    </div>
+
+    <!-- begin added for mobile version -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-blue-grey w3-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Home</a
+      >
+      <a href="#about" onclick="w3-close()" class="w3-bar-item w3-button"
+        >About</a
+      >
+      <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Gallery</a
+      >
+      <a href="#tools" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Tools</a
+      >
+      <a href="#tutorials" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Tutorials</a
+      >
+      <a href="#programs" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Programs</a
+      >
+    </nav>
+    <!-- end added for mobile version -->
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+      <img
+        class="w3-image"
+        src="/img /Front Image.jpeg"
+        alt="Hamburger Catering"
+        width="1600"
+        height="800"
+      />
+      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <h1 class="w3-xxlarge"></h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- About Section -->
+      <div class="w3-row w3-padding-64" id="about">
+          <h2 class="w3-center">About</h2>
+          <div class="w3-padding-large">
+            <h2>What is Flextionary?</h2>
+            <p>
+              <!-- added float left and img size -->
+              <img
+              src="./img /About Img 1.jpeg"
+              class="w3-round w3-image w3-left my-img-size-1"
+              alt="image of stretch"
+              style="width: 100%"
+              />
+              Flextionary is an innovative online resource dedicated to enhancing flexibility and stretching techniques for individuals of all fitness levels. This comprehensive platform offers a rich repository of information, including detailed guides, video tutorials, and expert advice on various stretching exercises and flexibility routines.  Flextionary is designed to be a user-friendly and comprehensive resource for anyone looking to incorporate stretching and flexibility into their fitness regimen, offering the knowledge and tools needed to improve overall physical health and wellness.
+            <span
+                >Check out tutorials:
+                <a
+                  href="https://en.wikipedia.org/wiki/Vegetable"
+                  target="_blank"
+                  class="w3-hover-opacity"
+                  >CLICK HERE</a
+                ></span
+              >
+            </p>
+          </div>
+
+          <div class="w3-padding-large">
+            <h2>What is active flexibility?</h2>
+            <p>
+              <img
+                src="./img /About Img 2.jpeg"
+                class="w3-round w3-image w3-right my-img-size-2"
+                alt="image of a jump"
+                style="width: 100%"
+                />
+              Active flexibility is the ability to move muscles and joints through their full range of motion with control and strength. Unlike passive flexibility, which involves holding a stretch with the help of an external force (such as a partner or gravity), active flexibility relies on the individual's muscle strength to achieve and maintain the position. This type of flexibility is crucial for athletes, dancers, and anyone looking to improve their overall physical performance and prevent injuries. Exercises that enhance active flexibility include dynamic stretches such as leg swings, arm and body. 
+              <span
+                >For more information:
+                <a
+                  href="https://en.wikipedia.org/wiki/Active_stretching"
+                  target="_blank"
+                  class="w3-hover-opacity"
+                  >CLICK HERE</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+
+      <hr />
+
+      <!-- Gallery Section -->
+      <div class="w3-row w3-padding-64" id="gallery">
+        <h1 class="w3-center">Gallery</h1>
+        <div class="w3-padding-large">
+          <!-- carousel -->
+          <div class="w3-content">
+            <!-- begin carousel slide show -->
+            <img class="mySlides" src="./img/salt-01.jpg" style="width: 100%" />
+            <img
+              class="mySlides"
+              src="./img/sugar-01.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/pepper-02.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/oil-02.jpg"
+              style="width: 100%; display: none"
+            />
+            <!-- end carousel slide show -->
+
+            <!-- begin carousel thumbnail -->
+            <!-- add thumbnail buttons for selecting a slide to show -->
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="./img/salt-01.jpg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(1)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="./img/sugar-01.jpg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(2)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="./img/pepper-02.jpg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(3)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="./img/oil-02.jpg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(4)"
+              />
+            </div>
+            <!-- end carousel thumbnail -->
+          </div>
+          <!-- 3 columns of scrollable areas - using row and col for partitions -->
+          <div class="w3-row">
+            <div class="w3-col s4 w3-padding w3-sand">
+              <div
+                class="w3-brown w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Vegetables</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Text
+                </p>
+              </div>
+            </div>
+            <div class="w3-col s4 w3-padding w3-brown">
+              <div
+                class="w3-sand w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Vegetables</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Text
+                </p>
+              </div>
+            </div>
+            <div class="w3-col s4 w3-padding w3-sand">
+              <div
+                class="w3-brown w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Vegetables</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Text
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+
+      <!-- Tools Section -->
+      <div class="w3-row w3-padding-64" id="tools">
+        <h1 class="w3-center">Tools</h1>
+        <!-- add sortable table -->
+        <!-- step 1: create a table with 4 columns -->
+        <!-- step 2: add javascrip and jquery to make the table sortable -->
+        <div class="w3-padding-large">
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr class="w3-blue-grey">
+                <th>TOOL</th>
+                <th>NAME</th>
+                <th>PURPOSE</th>
+                <th>ALTERNATIVE</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-border-indigo">
+              <td><img src="./img /Tool 1.png" style="width: 120px" /></td>
+              <td>Yoga Blocks</td>
+              <td>Support</td>
+              <td>Chair</td>
+            </tr>
+            <tr class="w3-hover-border-indigo">
+              <td>
+                <img src="./img /Tools 2.webp" style="width: 120px" />
+              </td>
+              <td>Stretch Mat</td>
+              <td>Support</td>
+              <td>Yoga Mat</td>
+            </tr>
+            <tr class="w3-hover-border-indigo">
+              <td><img src="./img /Tools 3.jpg" style="width: 120px" /></td>
+              <td>Mini Bands</td>
+              <td>Resistance</td>
+              <td>TheraBand</td>
+            </tr>
+            <tr class="w3-hover-border-indigo">
+              <td>
+                <img src="./img /Tool 4.webp" style="width: 120px" />
+              </td>
+              <td>Peanut</td>
+              <td>Release</td>
+              <td>Tennis Ball</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <hr />
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+  </body>
+</html>
