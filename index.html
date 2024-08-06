@@ -20,7 +20,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
       ></script>
       <link rel="stylesheet" href="./css/w3.css" />
-      
+
     <style>
       body {
         font-family: "Times New Roman", Georgia, Serif;
@@ -41,6 +41,29 @@
       }
       .my-img-size-2 {
         max-width: 300px;
+      }
+
+      .my-float-left {
+        float: left;
+        padding-right: 20px;
+      }
+
+      .my-float-right {
+        float: right;
+        padding-left: 20px;
+      }
+
+      /* for scrollable area */
+      .my-scrolling {
+        height: 300px;
+        overflow: auto;
+      }
+
+      /* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
       }
 
     </style>
@@ -161,7 +184,7 @@
               >
             </p>
           </div>
-
+          </div>
           <div class="w3-padding-large">
             <h2>What is active flexibility?</h2>
             <p>
@@ -186,28 +209,37 @@
         </div>
 
       <hr />
-
       <!-- Gallery Section -->
-      <div class="w3-row w3-padding-64" id="gallery">
+      <div class="w3-row w3-padding-large" id="gallery">
         <h1 class="w3-center">Gallery</h1>
         <div class="w3-padding-large">
           <!-- carousel -->
           <div class="w3-content">
             <!-- begin carousel slide show -->
-            <img class="mySlides" src="./img/salt-01.jpg" style="width: 100%" />
+            <img class="mySlides" src="./img /Gallery 1.jpeg" style="width: 50%" />
             <img
               class="mySlides"
-              src="./img/sugar-01.jpg"
+              src="./img /Gallery 2.jpeg"
               style="width: 100%; display: none"
             />
             <img
               class="mySlides"
-              src="./img/pepper-02.jpg"
+              src="./img /Gallery 3.jpeg"
               style="width: 100%; display: none"
             />
             <img
               class="mySlides"
-              src="./img/oil-02.jpg"
+              src="./img /Gallery 4.jpeg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img /Gallery 5.jpeg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img /Gallery 6.jpeg"
               style="width: 100%; display: none"
             />
             <!-- end carousel slide show -->
@@ -217,35 +249,51 @@
             <div class="w3-col s3">
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
-                src="./img/salt-01.jpg"
-                style="width: 100%; cursor: pointer"
+                src="./img /Gallery 1.jpeg"
+                style="width: 50%; cursor: pointer"
                 onclick="currentDiv(1)"
               />
             </div>
             <div class="w3-col s3">
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
-                src="./img/sugar-01.jpg"
-                style="width: 100%; cursor: pointer"
+                src="./img /Gallery 2.jpeg"
+                style="width: 50%; cursor: pointer"
                 onclick="currentDiv(2)"
               />
             </div>
             <div class="w3-col s3">
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
-                src="./img/pepper-02.jpg"
-                style="width: 100%; cursor: pointer"
+                src="./img /Gallery 3.jpeg"
+                style="width: 50%; cursor: pointer"
                 onclick="currentDiv(3)"
               />
             </div>
             <div class="w3-col s3">
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
-                src="./img/oil-02.jpg"
-                style="width: 100%; cursor: pointer"
+                src="./img /Gallery 4.jpeg"
+                style="width: 50%; cursor: pointer"
                 onclick="currentDiv(4)"
               />
             </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="./img /Gallery 5.jpeg"
+                style="width: 50%; cursor: pointer"
+                onclick="currentDiv(5)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="./img /Gallery 6.jpeg"
+                style="width: 50%; cursor: pointer"
+                onclick="currentDiv(6)"
+              />
+              </div>
             <!-- end carousel thumbnail -->
           </div>
           <!-- 3 columns of scrollable areas - using row and col for partitions -->
@@ -259,7 +307,7 @@
                   margin-top: -18px;
                 "
               >
-                <h2>Vegetables</h2>
+                <h2>Text</h2>
               </div>
               <div class="my-scrolling" style="padding-right: 10px">
                 <p>
@@ -276,7 +324,7 @@
                   margin-top: -18px;
                 "
               >
-                <h2>Vegetables</h2>
+                <h2>Text</h2>
               </div>
               <div class="my-scrolling" style="padding-right: 10px">
                 <p>
@@ -293,7 +341,7 @@
                   margin-top: -18px;
                 "
               >
-                <h2>Vegetables</h2>
+                <h2>Text</h2>
               </div>
               <div class="my-scrolling" style="padding-right: 10px">
                 <p>
@@ -314,7 +362,7 @@
         <!-- add sortable table -->
         <!-- step 1: create a table with 4 columns -->
         <!-- step 2: add javascrip and jquery to make the table sortable -->
-        <div class="w3-padding-large">
+        <div class="w3-padding-large;" style="max-width: 1100px;">
           <table id="myTable" class="w3-table-all">
             <thead>
               <tr class="w3-blue-grey">
@@ -357,6 +405,177 @@
       </div>
       <hr />
 
+      <!-- Youtube and Accordion Section -->
+      <div class="w3-padding-64 w3-container" id="tutorials">
+        <h1 class="w3-center">Tutorials</h1>
+        <div class="w3-row">
+          <div class="w3-col m4 w3-center">
+            <iframe
+              height="250"
+              width="100%"
+              src="https://www.youtube.com/embed/0aa7x140Q48"
+              title="30 Day Toe Touch Flexibility Challenge (Hamstring Stretching Routine)"
+              style="padding: 5px; border:1px"
+              allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+          <div class="w3-col m4 w3-center">
+            <iframe
+              height="250"
+              width="100%"
+              src="https://www.youtube.com/embed/5bZSI6YjOuU"
+              title="What is ACTIVE FLEXIBILITY? The COMPLETE Explanation + Demo (Passive and Active Stretching)"
+              style="padding: 5px; border:1px"
+              allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+          <div class="w3-col m4 w3-center">
+            <iframe
+              height="250"
+              width="100%"
+              src="https://www.youtube.com/embed/xRGJmSSGVzE?si=AoYP5hMzhclgBd3d"
+              title="Dr Jen Crane - Active Flexibility, Reducing Injury and Nerve Gliding | Warrior Podcast #3"
+              style="padding: 5px; border:1px"
+              allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col m4 w3-center">
+            <iframe
+              height="250"
+              width="100%"
+              src="https://www.youtube.com/embed/MjFVdFZPyIM?si=75Cfg1sCYQXZbw1v"
+              title="Strethching with Ash Rexford"
+              style="padding: 5px; border:1px"
+              allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+          <div class="w3-col m4 w3-center">
+            <iframe
+              height="250"
+              width="100%"
+              src="https://www.youtube.com/embed/Lr1HbXuROB0?si=KlfVs6cj0kexKHvc"
+              title="Overhead Shoulder Flexibility (External Shoulder Rotation) Stretching Routine"
+              style="padding: 5px; border:1px"
+              allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+          <div class="w3-col m4 w3-center">
+            <iframe
+              height="250"
+              width="100%"
+              src="https://www.youtube.com/embed/zLKIg1wfuNs?si=Jkqy4pBx2KOouf0f"
+              title="Best 5 Stretches You Must do Daily for Increased Flexibility and Mobility!"
+              style="padding: 5px; border:1px"
+              allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- accordion -->
+        <!-- step 1: add accordion button -->
+        <!-- step 2: add accordion content -->
+        <!-- step 3: add accorion javascrip -->
+        <div class="w3-row">
+          <div class="s6" style="padding-right: 3px">
+            <button
+              onclick="myAccordion('accordion1')"
+              class="w3-button w3-block w3-blue-grey w3-center-align"
+              id="accordionBtn1"
+            >
+              <h4>FREQUENTLY ASKED FLEXIBILITY QUESTIONS <i class="fa fa-caret-down"></i></h4>
+            </button>
+            <div
+              id="accordion1"
+              class="w3-hide w3-container"
+              style="height: auto"
+            >
+              <p>
+                <b>How often should I stretch to improve flexibility? <br> </b>
+                Improve flexibility, it is recommended to stretch at least 2-3 times per week, holding each stretch for 15-30 seconds.
+                <br>
+                <b><br>Is it better to stretch before or after a workout? <br></b>
+                Dynamic stretching (moving stretches) is best before a workout to prepare the muscles, while static stretching (holding stretches) is better post-workout to aid in recovery.
+                <br>
+                <b><br>Can anyone become flexible, or is it genetic? <br></b>
+                While genetics play a role in baseline flexibility, most people can significantly improve their flexibility with consistent stretching and mobility exercises.
+                <br>
+                <b><br>What are the benefits of flexibility? <br></b>
+                Flexibility can improve your range of motion, reduce the risk of injury, decrease muscle soreness, and enhance overall performance in physical activities.
+                <br>
+                <b><br>What is the difference between flexibility and mobility? <br></b>
+                Flexibility refers to the ability of muscles to stretch, while mobility involves the range of motion in your joints and the ability to move through that range efficiently.
+              </p>
+            </div>
+          </div>
+          <br>
+          </br>
+          <div class="s6" style="padding-right: 3px">
+            <button
+              onclick="myAccordion('accordion2')"
+              class="w3-button w3-block w3-blue-grey w3-center-align"
+              id="accordionBtn1"
+            >
+              <h4>MORE STRETCHING TIPS<i class="fa fa-caret-down"></i></h4>
+            </button>
+            <div
+              id="accordion2"
+              class="w3-hide w3-container"
+              style="height: auto"
+            >
+              <p>
+                <b>1. Warm Up First <br></b>
+                Tip: Always warm up your muscles before stretching. A light 5-10 minute cardio session, like jogging or jumping jacks, can increase blood flow and make your muscles more pliable.
+                <br>
+                <b><br>2. Use Proper Technique</b>
+                <br>Tip: Focus on form during each stretch. Avoid bouncing or jerking movements, as these can lead to injury. Instead, move into each stretch slowly and hold it steady.
+                <br>
+                <b><br>3. Breathe Deeply</b>
+                <br>Tip: Don’t hold your breath while stretching. Deep breathing helps you relax and can allow you to stretch deeper over time. Inhale as you prepare to stretch and exhale as you move into the stretch.
+                <br>
+                <b><br>4. Stretch All Major Muscle Groups</b>
+                <br>Tip: Make sure to target all major muscle groups, including your neck, shoulders, arms, back, hips, thighs, calves, and ankles. Balanced flexibility reduces the risk of injury.
+                <br>
+                <b><br>5. Don’t Overdo It</b>
+                <br>Tip: Stretch to the point of mild discomfort, not pain. If a stretch is painful, ease off slightly. Pushing too hard can cause strains or muscle tears.
+                <br>
+                <b><br>6. Hold Stretches Long Enough</b>
+                <br>Tip: Hold each stretch for at least 15-30 seconds. This duration allows your muscles to fully relax and lengthen. For deeper flexibility, consider holding for 60 seconds.
+                <br>
+                <b><br>7. Be Consistent</b>
+                <br>Tip: Flexibility improves with regular practice. Aim to stretch at least 2-3 times per week, and ideally after every workout session.
+                <br>
+                <b><br>8. Incorporate Dynamic Stretches</b>
+                <br>Tip: Before exercise, incorporate dynamic stretches (such as leg swings or arm circles) to prepare your muscles for movement. Save static stretches for after your workout to cool down.
+                <br>
+                <b><br>9. Use Support if Needed</b>
+                <br>Tip: If you struggle with balance or flexibility, use props like yoga blocks, straps, or a wall for support. This can help you maintain proper alignment and get the most out of each stretch.
+                <br>
+                <b><br>10. Listen to Your Body</b>
+                <br>Tip: Pay attention to how your body feels during and after stretching. If certain stretches cause discomfort or pain, modify or avoid them until you can perform them without issues.
+                <br>
+                <b><br>11. Incorporate Stretching into Daily Routine</b>
+                <br>Tip: Consider adding short stretching sessions into your daily routine, such as stretching when you wake up, during breaks at work, or before bed.
+                <br>
+                <b><br>12. Stay Hydrated</b>
+                <br>Tip: Muscles are more pliable when hydrated. Drink plenty of water throughout the day to keep your muscles supple and reduce the risk of cramps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End page content -->
+    </div>
+
       <!-- End page content -->
     </div>
 
@@ -373,6 +592,8 @@
         >
       </p>
     </footer>
+
+    
 
     <script>
       // Toggle between showing and hiding the sidebar when clicking the menu icon
@@ -403,6 +624,67 @@
         });
       });
       // end added for sortable
+
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // end added for accordion
+
+       // begin added for carousel
+      // step 2: add javascript to support carousel slideshow feature
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+
     </script>
   </body>
 </html>
