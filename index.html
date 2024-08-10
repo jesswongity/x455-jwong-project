@@ -22,10 +22,7 @@
       <link rel="stylesheet" href="./css/w3.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Permanent+Marker&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Permanent+Marker&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
       body {
@@ -33,8 +30,8 @@
       }
       h1 {font-family: "Graduate";} 
       h2 {font-family: "American Typewriter"}
-      h3 {font-family: "Permanent Marker"}
-      h4,
+      h3 {font-family: "Permanent Marker"; letter-spacing: 2px;}
+      h4 {font-family: "Zilla Slab Highlight"; font-size: xx-large;}
       h5,
       h6 {
         font-family: "Graduate";
@@ -48,6 +45,7 @@
       .my-img-size-2 {
         max-width: 300px;
       }
+    
 
       .my-float-left {
         float: left;
@@ -72,6 +70,7 @@
         max-width: 65%;
       }
 
+
     </style>
   </head>
   <body>
@@ -79,32 +78,32 @@
     <div class="w3-top">
       <div
         class="w3-bar w3-white w3-padding w3-card w3-text-blue-grey"
-        style="letter-spacing: 4px"
+        style="letter-spacing: 1px"
       >
       <div>
         <a class="w3-padding-large w3-hide-small w3-right"
           ><i class="fa fa-search w3-text-grey"></i
         ></a>
       </div>
-      <h3>
+      <h1>
         <a href="#home" class="w3-bar-item w3-button w3-large">
           <img
               src="./img/Logo.png"
               class="w3-round w3-image w3-left my-img-size-1"
               alt="image of stretch"
-              style="width: 40%"
+              style="width: 40%;"
               />
         </a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small w3-large">
-          <a href="#home" class="w3-bar-item w3-button">Home</a>
-          <a href="#about" class="w3-bar-item w3-button">About</a>
-          <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
-          <a href="#tools" class="w3-bar-item w3-button">Tools</a>
-          <a href="#tutorials" class="w3-bar-item w3-button">Tutorials</a>
-          <a href="#programs" class="w3-bar-item w3-button">Programs</a>
+          <a href="#home" class="w3-bar-item w3-button">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="#gallery" class="w3-bar-item w3-button">GALLERY</a>
+          <a href="#tools" class="w3-bar-item w3-button">TOOLS</a>
+          <a href="#tutorials" class="w3-bar-item w3-button">TUTORIALS</a>
+          <a href="#programs" class="w3-bar-item w3-button">PROGRAMS</a>
         </div>
-        </h3>
+        </h1>
       
 
         <!-- begin added for mobile version -->
@@ -175,9 +174,9 @@
     <div class="w3-content" style="max-width: 1100px">
       <!-- About Section -->
       <div class="w3-row w3-padding-64" id="about">
-          <h1 class="w3-center">About</h1>
+          <h4 class="w3-center">ABOUT</h4>
           <div class="w3-padding-large">
-            <h2>What is Flextionary?</h2>
+            <h3>What is Flextionary?</h3>
             <p>
               <!-- added float left and img size -->
               <img
@@ -204,7 +203,7 @@
           </div>
           </div>
           <div class="w3-padding-large">
-            <h2>What is active flexibility?</h2>
+            <h3>What is active flexibility?</h3>
             <p>
               <img
                 src="./img/About-Img-2.jpeg"
@@ -232,7 +231,7 @@
       <hr />
       <!-- Gallery Section -->
       <div class="w3-row w3-padding-large" id="gallery">
-        <h1 class="w3-center">Gallery</h1>
+        <h1 class="w3-center">GALLERY</h1>
         <div class="w3-padding-large">
           <!-- carousel -->
           <div class="w3-content">
@@ -264,7 +263,8 @@
               style="width: 100%; display: none"
             />
             <!-- end carousel slide show -->
-
+          <br>
+          <br>
             <!-- begin carousel thumbnail -->
             <!-- add thumbnail buttons for selecting a slide to show -->
             <div class="w3-col s2">
@@ -317,7 +317,9 @@
               </div>
             <!-- end carousel thumbnail -->
           </div>
-         
+          <br>
+          <br>
+          <br>
           <!-- 1 columns of scrollable areas - using row and col for partitions -->
           <div class="w3-row">
             <div class="w3-col w3-padding w3-white">
@@ -329,7 +331,7 @@
                   margin-top: -18px;
                 "
               >
-                <h2>Stretch List</h2>
+                <h3>Stretch List</h3>
               </div>
               <div class="my-scrolling" style="padding-right: 10px">
                 <p>
@@ -358,7 +360,8 @@
 
       <!-- Tools Section -->
       <div class="w3-row w3-padding-64" id="tools">
-        <h1 class="w3-center">Tools</h1>
+        <h1 class="w3-center">TOOLS</h1>
+        <br>
         <!-- add sortable table -->
         <!-- step 1: create a table with 4 columns -->
         <!-- step 2: add javascrip and jquery to make the table sortable -->
@@ -407,7 +410,8 @@
 
       <!-- Youtube and Accordion Section -->
       <div class="w3-padding-64 w3-container" id="tutorials">
-        <h1 class="w3-center">Tutorials</h1>
+        <h1 class="w3-center">TUTORIALS</h1>
+        <br>
         <div class="w3-row">
           <div class="w3-col m4 w3-center">
             <iframe
@@ -576,14 +580,14 @@
 
        <!-- lightbox-->
        <div id="Programs" class="w3-container w3-padding-top-64">
-        <h1 class="w3-center">Programs</h1>
+        <h1 class="w3-center">PROGRAMS</h1>
 
         <!-- step 1: add thumbnail image -->
         <!-- step 2: add modal (background image and close button) -->
         <div class="w3-row-padding" style="margin: 15px 0px">
           <div class="w3-col s4">
             <img
-              src="./img /Program-1.jpeg"
+              src="./img/Program-1.jpeg"
               style="width: 100%; cursor: zoom-in"
               onclick="document.getElementById('modal01').style.display='block'"
               class="w3-hover-shadow"
@@ -593,7 +597,7 @@
           <div class="w3-row-padding" style="margin: 15px 0px">
             <div class="w3-col s4">
             <img
-              src="./img /Program-2.jpeg"
+              src="./img/Program-2.jpeg"
               style="width: 100%; cursor: zoom-in"
               onclick="document.getElementById('modal02').style.display='block'"
               class="w3-hover-shadow"
@@ -611,8 +615,8 @@
           >
           <!-- add modal background image -->
           <div class="w3-modal-content w3-animate-zoom">
-            <h4 class="w3-center">Cirque Physio</h4>
-            <img src="./img /Program-1.jpeg" style="width: 100%" />
+            <h3 class="w3-center">CIRQUE PHYSIO</h3>
+            <img src="./img/Program-1.jpeg" style="width: 100%" />
           </div>
 
           
