@@ -231,7 +231,7 @@ body, html {
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
                 src="./img/Gallery-1.jpeg"
-                style="width: 50%; cursor: pointer"
+                style="width: 90%; cursor: pointer"
                 onclick="currentDiv(1)"
               />
             </div>
@@ -239,7 +239,7 @@ body, html {
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
                 src="./img/Gallery-2.jpeg"
-                style="width: 50%; cursor: pointer"
+                style="width: 90%; cursor: pointer"
                 onclick="currentDiv(2)"
               />
             </div>
@@ -247,7 +247,7 @@ body, html {
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
                 src="./img/Gallery-3.jpeg"
-                style="width: 50%; cursor: pointer"
+                style="width: 90%; cursor: pointer"
                 onclick="currentDiv(3)"
               />
             </div>
@@ -255,7 +255,7 @@ body, html {
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
                 src="./img/Gallery-4.jpeg"
-                style="width: 50%; cursor: pointer"
+                style="width: 90%; cursor: pointer"
                 onclick="currentDiv(4)"
               />
             </div>
@@ -263,7 +263,7 @@ body, html {
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
                 src="./img/Gallery-5.jpeg"
-                style="width: 50%; cursor: pointer"
+                style="width: 90%; cursor: pointer"
                 onclick="currentDiv(5)"
               />
             </div>
@@ -271,17 +271,17 @@ body, html {
               <img
                 class="demo w3-opacity w3-hover-opacity-off"
                 src="./img/Gallery-6.jpeg"
-                style="width: 50%; cursor: pointer"
+                style="width: 90%; cursor: pointer"
                 onclick="currentDiv(6)"
               />
             </div>
-            </div>
             <!-- end carousel thumbnail -->
-
+          </div>
 
   <!-- 1 columns of scrollable areas - using row and col for partitions -->
-        <div class="w3-row">
-          <div class="w3-col w3-padding w3-white">
+
+        <div class="w3-row ">
+          <div class="w3-col w3-padding w3-light-grey" style="margin-top: 30px;">
             <div
               class="w3-dark-grey w3-center"
               style="
@@ -290,7 +290,7 @@ body, html {
                 margin-top: -18px;
               "
             >
-          <h5>WARM-UP LIST</h5>
+          <h5>WARM-UP TIPS & SUGGESTIONS</h5>
           </div>
               <div class="my-scrolling" style="padding-right: 10px">
                 <p>
@@ -331,7 +331,7 @@ body, html {
         <!-- step 1: create a table with 4 columns -->
         <!-- step 2: add javascrip and jquery to make the table sortable -->
         <div class="w3-padding-large;">
-          <table id="myTable" class="w3-table w3-bordered w3-centered">
+          <table id="myTable" class="w3-table-all w3-bordered w3-centered">
            <thead>
               <tr class="w3-dark-grey">
                 <th><h5>TOOL</h5></th>
@@ -555,8 +555,8 @@ body, html {
 
         <!-- step 1: add thumbnail image -->
         <!-- step 2: add modal (background image and close button) -->
-        <div class="w3-content w3-container w3-padding-64 w3-center" style="margin: 25px">
-          <div class="w3-col m4 w3-container">
+        <div class="w3-content w3-container w3-row-padding w3-center" style="margin: 15px 0px">
+          <div class="w3-col s4">
             <img
               src="./img/Program-1.jpeg"
               style="width: 100%; cursor: zoom-in"
@@ -565,7 +565,7 @@ body, html {
             />
           </div>
           
-          <div class="w3-col m4 w3-container">
+          <div class="w3-col s4">
             <img
               src="./img/Program-2.jpeg"
               style="width: 100%; cursor: zoom-in"
@@ -573,23 +573,26 @@ body, html {
               class="w3-hover-shadow"
             /></div>
           
-          <div class="w3-col m4 w3-container">
+          <div class="w3-col m4 s4">
             <img
                 src="./img/Program-3.jpeg"
                 style="width: 100%; cursor: zoom-in"
                 onclick="document.getElementById('modal03').style.display='block'"
                 class="w3-hover-shadow"
               /></div>
-              
-          <div class="w3-col m4 w3-container">
+        </div>
+
+        <div class="w3-content w3-container w3-row-padding w3-center" style="margin: 15px 0px">  
+          <div class="w3-col s4">
             <img
                 src="./img/Program-4.jpeg"
                 style="width: 100%; cursor: zoom-in"
                 onclick="document.getElementById('modal04').style.display='block'"
                 class="w3-hover-shadow"
               /></div>
+              
           
-          <div class="w3-col m4 w3-container">
+          <div class="w3-col s4">
             <img
                 src="./img/Program-5.jpeg"
                 style="width: 100%; cursor: zoom-in"
@@ -597,14 +600,14 @@ body, html {
                 class="w3-hover-shadow"
               /></div>
 
-          <div class="w3-col m4 w3-container">
+          <div class="w3-col s4">
             <img
                 src="./img/Program-6.jpeg"
                 style="width: 100%; cursor: zoom-in"
                 onclick="document.getElementById('modal06').style.display='block'"
                 class="w3-hover-shadow"
               /></div>
-
+        </div>
         </div>
 
         <!-- add modal -->
