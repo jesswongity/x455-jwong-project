@@ -1,55 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>W3.CSS Template</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
 
-        <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
-        <script
-        type="text/JavaScript"
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      ></script>
-      <script
-        type="text/JavaScript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
-      ></script>
-      <link rel="stylesheet" href="./css/w3.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    
-  <!-- Social Media Links -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-   <style>
-   
-      body {
-        font-family: "Quicksand", sans-serif; font-size: medium;
-            }
-      h1 {font-family: "Graduate";} 
-      h2 {font-family: "Graduate"}
-      h3 {font-family: "Avenir Next Condensed"; letter-spacing: 0px;}
-      h4 
-      h5,
-      h6 {
-        font-family: "Graduate";
-        letter-spacing: 0px;
-        
-
-      }
-    
-
-      /* my css */
+/* my css */
       .my-img-size-1 {
         max-width: 300px;
       }
@@ -82,68 +48,67 @@
       }
 
 
-    </style>
-  </head>
-  <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div
-        class="w3-bar w3-white w3-padding w3-card w3-text-blue-grey"
-        style="letter-spacing: 1px"
-      >
-      <div>
-        <a class="w3-padding-large w3-hide-small w3-right"
-          ><i class="fa fa-search w3-text-grey"></i
-        ></a>
-      </div>
-      <h1>
-        <a href="#home" class="w3-bar-item w3-button w3-large">
-          <img
-              src="./img/Logo.png"
-              class="w3-round w3-image w3-left my-img-size-1"
-              alt="image of stretch"
-              style="width: 40%;"
-              />
-        </a>
-        <!-- Right-sided navbar links. Hide them on small screens -->
-        <div class="w3-right w3-hide-small w3-large">
-          <a href="#home" class="w3-bar-item w3-button">HOME</a>
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/img/Front-Image.jpeg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/img/Resources.jpeg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+     <a href="#home" class="w3-bar-item w3-button">HOME</a>
           <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
           <a href="#gallery" class="w3-bar-item w3-button">GALLERY</a>
           <a href="#tools" class="w3-bar-item w3-button">TOOLS</a>
           <a href="#tutorials" class="w3-bar-item w3-button">TUTORIALS</a>
           <a href="#programs" class="w3-bar-item w3-button">PROGRAMS</a>
-        </div>
-        </h1>
-      
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
-        <!-- begin added for mobile version -->
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-       <a
-          href="javascript:void(0)"
-          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-          onclick="w3_open()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-        <!-- end added for mobile version -->
-      </div>
-    </div>
-
-    <!-- begin added for mobile version -->
-    <nav
-      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-blue-grey w3-large"
-      style="display: none"
-      id="mySidebar"
-    >
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button w3-large w3-padding-16"
-        >Close &times;</a
-      >
-      <h6>
-      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"
         >HOME</a
       >
       <a href="#about" onclick="w3-close()" class="w3-bar-item w3-button"
@@ -161,37 +126,22 @@
       <a href="#programs" onclick="w3_close()" class="w3-bar-item w3-button"
         >PROGRAMS</a
       >
-    </nav></h6>
-    <!-- end added for mobile version -->
+  </div>
+</div>
 
-    <!-- Header -->
-    <header
-      class="w3-display-container w3-content w3-wide"
-      style="max-width: 1600px; min-width: 500px"
-      id="home"
-    >
-      <img
-        class="w3-image"
-        src="img/Front-Image.jpeg"
-        alt="Front Image"
-        width="1600"
-        height="800"
-      />
-      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-        <h1 class="w3-xxlarge"></h1>
-      </div>
-    </header>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1  w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">FLEXTIONARY</span> 
+  </div>
+</div>
 
-    <!-- Page content -->
-    <div class="w3-content" style="max-width: 1100px">
-      <!-- About Section -->
-      <div class="w3-row w3-padding-64" id="about">
-          <h1 class="w3-center">ABOUT</h1>
-          <div class="w3-padding-large">
-            <h3>WHAT IS FLEXTIONARY?</h3>
-            <p>
-              <!-- added float left and img size -->
-              <img
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h1 class="w3-center">ABOUT</h1>
+  <h3>WHAT IS FLEXTIONARY?</h3>
+   <p>
+             <img
               src="./img/About-Img-1.jpeg"
               class="w3-round w3-image w3-left my-img-size-1"
               alt="image of stretch"
@@ -214,7 +164,7 @@
             </p>
           </div>
           </div>
-          <div class="w3-padding-large">
+          <div class="w3-content w3-container w3-padding-64">
             <h3>WHAT IS ACTIVE FLEXIBILITY?</h3>
             <p>
               <img
@@ -238,17 +188,15 @@
               ></b>
             </p></p>
           </div>
-        </div>
-
-      <hr />
-      <!-- Gallery Section -->
-      <div class="w3-row w3-padding-large" id="gallery">
+    </div>
+<!-- Gallery Section -->
+      <div class="w3-content w3-container w3-padding-64" id="gallery">
         <h1 class="w3-center">GALLERY</h1>
         <div class="w3-padding-large">
           <!-- carousel -->
-          <div class="w3-content">
+          <div class="w3-content w3-center">
             <!-- begin carousel slide show -->
-            <img class="mySlides" src="./img/Gallery-1.jpeg" style="width: 50%" />
+            <img class="mySlides" src="./img/Gallery-1.jpeg" style="width: 100%" />
             <img
               class="mySlides"
               src="./img/Gallery-2.jpeg"
@@ -273,9 +221,8 @@
               class="mySlides"
               src="./img/Gallery-6.jpeg"
               style="width: 100%; display: none"
-            />
+            /></div>
             <!-- end carousel slide show -->
-          <br>
           <br>
             <!-- begin carousel thumbnail -->
             <!-- add thumbnail buttons for selecting a slide to show -->
@@ -326,25 +273,23 @@
                 style="width: 50%; cursor: pointer"
                 onclick="currentDiv(6)"
               />
-              </div>
+            </div>
             <!-- end carousel thumbnail -->
-          </div>
-          <br>
-          <br>
-          <br>
-          <!-- 1 columns of scrollable areas - using row and col for partitions -->
+
+
+  <!-- 1 columns of scrollable areas - using row and col for partitions -->
           <div class="w3-row">
             <div class="w3-col w3-padding w3-white">
               <div
-                class="w3-blue-grey w3-center"
+                class="w3-dark-grey w3-center"
                 style="
                   margin-left: -16px;
                   margin-right: -16px;
                   margin-top: -18px;
                 "
               >
-                <h3>WARM-UP LIST</h3>
-              </div>
+          <h5>WARM-UP LIST</h5>
+          </div>
               <div class="my-scrolling" style="padding-right: 10px">
                 <p>
                   <b>1. Leg Swings</b><br>
@@ -375,9 +320,9 @@
         </div>
       </div>
 
-      <hr />
+    
       <!-- Tools Section -->
-      <div class="w3-row w3-padding-64" id="tools">
+      <div class="w3-content w3-container w3-padding-64" id="tools">
         <h1 class="w3-center">TOOLS</h1>
         <br>
         <!-- add sortable table -->
@@ -386,11 +331,11 @@
         <div class="w3-padding-large;">
           <table id="myTable" class="w3-table w3-bordered w3-centered">
            <thead>
-              <tr class="w3-blue-grey">
-                <th>TOOL</th>
-                <th>NAME</th>
-                <th>PURPOSE</th>
-                <th>ALTERNATIVE</th>
+              <tr class="w3-dark-grey">
+                <th><h5>TOOL</h5></th>
+                <th><h5>NAME</h5></th>
+                <th><h5>PURPOSE</h5></th>
+                <th><h5>ALTERNATIVE</h5></th>
               </tr>
             </thead>
             <tr class="w3-hover-light-grey">
@@ -424,10 +369,17 @@
           </table>
         </div>
       </div>
-      <hr />
+    
+
+      <!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">RESOURCES</span>
+  </div>
+</div>
 
       <!-- Youtube and Accordion Section -->
-      <div class="w3-padding-64 w3-container" id="tutorials">
+      <div class="w3-content w3-container w3-padding-64" id="tutorials">
         <h1 class="w3-center">TUTORIALS</h1>
         <br>
         <div class="w3-row">
@@ -500,8 +452,6 @@
             </iframe>
           </div>
         </div>
-
-        <hr />
         <br>
         <br>
 
@@ -513,10 +463,10 @@
           <div class="s6" style="padding-right: 3px">
             <button
               onclick="myAccordion('accordion1')"
-              class="w3-button w3-block w3-blue-grey w3-center-align"
+              class="w3-button w3-block w3-dark-grey w3-center-align"
               id="accordionBtn1"
             >
-              <h3>FREQUENTLY ASKED FLEXIBILITY QUESTIONS <i class="fa fa-caret-down"></i></h3>
+              <h5>FREQUENTLY ASKED FLEXIBILITY QUESTIONS <i class="fa fa-caret-down"></i></h5>
             </button>
             <div
               id="accordion1"
@@ -541,15 +491,14 @@
               </p>
             </div>
           </div>
-          <br>
-          </br>
+          <br></br>
           <div class="s6" style="padding-right: 3px">
             <button
               onclick="myAccordion('accordion2')"
-              class="w3-button w3-block w3-blue-grey w3-center-align"
+              class="w3-button w3-block w3-dark-grey w3-center-align"
               id="accordionBtn1"
             >
-              <h3>MORE STRETCHING TIPS<i class="fa fa-caret-down"></i></h3>
+              <h5>MORE STRETCHING TIPS<i class="fa fa-caret-down"></i></h5>
             </button>
             <div
               id="accordion2"
@@ -599,13 +548,13 @@
       </div>
 
        <!-- lightbox-->
-      <div class="w3-padding-64" id="programs">
-      <h1 class="w3-center">PROGRAMS</h1><br>
-<br>
+      <div class="w3-content w3-container w3-padding-64 w3-center" id="programs">
+      <h1 class="w3-center">PROGRAMS</h1>
+
         <!-- step 1: add thumbnail image -->
         <!-- step 2: add modal (background image and close button) -->
-        <div class="w3-row-padding" style="margin: 25px">
-          <div class="w3-col s4">
+        <div class="w3-content w3-container w3-padding-64 w3-center" style="margin: 25px">
+          <div class="w3-col m4 w3-container">
             <img
               src="./img/Program-1.jpeg"
               style="width: 100%; cursor: zoom-in"
@@ -614,7 +563,7 @@
             />
           </div>
           
-          <div class="w3-col s4">
+          <div class="w3-col m4 w3-container">
             <img
               src="./img/Program-2.jpeg"
               style="width: 100%; cursor: zoom-in"
@@ -622,7 +571,7 @@
               class="w3-hover-shadow"
             /></div>
           
-          <div class="w3-col s4">
+          <div class="w3-col m4 w3-container">
             <img
                 src="./img/Program-3.jpeg"
                 style="width: 100%; cursor: zoom-in"
@@ -630,7 +579,7 @@
                 class="w3-hover-shadow"
               /></div>
               
-          <div class="w3-col s4">
+          <div class="w3-col m4 w3-container">
             <img
                 src="./img/Program-4.jpeg"
                 style="width: 100%; cursor: zoom-in"
@@ -638,14 +587,15 @@
                 class="w3-hover-shadow"
               /></div>
           
-          <div class="w3-col s4">
+          <div class="w3-col m4 w3-container">
             <img
                 src="./img/Program-5.jpeg"
                 style="width: 100%; cursor: zoom-in"
                 onclick="document.getElementById('modal05').style.display='block'"
                 class="w3-hover-shadow"
               /></div>
-          <div class="w3-col s4">
+
+          <div class="w3-col m4 w3-container">
             <img
                 src="./img/Program-6.jpeg"
                 style="width: 100%; cursor: zoom-in"
@@ -738,7 +688,7 @@
       <!-- End page content -->
     </div>
 
-      <!-- End page content -->
+    <!-- End page content -->
     </div>
 
     <!-- Footer -->
@@ -820,6 +770,17 @@
     
 
     <script>
+      // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
       // Toggle between showing and hiding the sidebar when clicking the menu icon
       var mySidebar = document.getElementById("mySidebar");
 
@@ -836,18 +797,6 @@
         mySidebar.style.display = "none";
       }
       // end added for mobile version
-
-      // begin added for sortable
-      $(document).ready(function () {
-        $("table#myTable").tablesorter({
-          sortList: [
-            [2, 1],
-          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
-          CssAsc: "tablesorter-headerAsc",
-          CssDesc: "tablesorter-headerDesc",
-        });
-      });
-      // end added for sortable
 
       // begin added for accordion
       function myAccordion(id) {
@@ -908,6 +857,20 @@
         dots[slideIndex - 1].className += " w3-opacity-off";
       }
       // end added for carousel
+
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+
+      
 
     </script>
   </body>
